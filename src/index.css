@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  /* .btn-primary {
+      @apply py-1.5 px-3 text-center bg-blue-700 rounded-md text-white;
+  } */
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-container);
+  /* Track color */
+}
+
+/* Change thumb color based on dark or light theme */
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  /* Dark mode thumb color */
+}
+
+:not(.dark) ::-webkit-scrollbar-thumb {
+  background-color: #e88787;
+  /* Light mode thumb color */
+}
+
+:root {
+  font-family: "Rubik", sans-serif;
+  --bg-color: #f8f9fa;
+  --bg-container: #ffffff;
+
+  &.dark {
+    --bg-color: #1f2a3d;
+    --bg-container: #404c60b8;
+  }
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding: 50px 20px;
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 16px;
+  background-color: var(--bg-container);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
