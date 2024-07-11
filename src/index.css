@@ -9,7 +9,7 @@
   } */
 }
 
-/* Custom scrollbar styles */
+/* Custom thin scrollbar styles */
 ::-webkit-scrollbar {
   width: 8px;
   /* Width of the scrollbar */
